@@ -1,0 +1,11 @@
+data/
+*.png
+*.jpg
+*.jpeg
+*.tif
+        data/
+venv/
+.env
+__pycache__/
+.DS_Store
+*.ipynb_checkpoints
