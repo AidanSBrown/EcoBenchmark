@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "ecobenchmark"
+version = "0.1.0"
+description = "Benchmarking Image Recognition for Ecological Detection"
+authors = ["Aidan Brown <aidansbrown@gwu.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+# We explicitly request DeepForest < 2.0.0 for stability
+deepforest = "<2.0.0"
+# We allow numpy to be flexible because DeepForest 1.x likely needs numpy < 2.0
+numpy = "^1.26"
+pandas = "^2.0"
+tqdm = "^4.67"
+matplotlib = "^3.8"
+# Adding the package you were trying to install
+python-dotenv = "^1.0"
+google-generativeai = "^0.8.6"
+dotenv = "^0.9.9"
+albumentations = "<1.5.0"
+functional = "^0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
